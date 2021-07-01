@@ -38,6 +38,8 @@ img {
 }
 
 .row-content {
+    position: relative;
+    display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -146,13 +148,15 @@ img {
     transition:all .3s linear;
     z-index:1;
 }
+
+.leftmenu-list:hover .leftmenu-link-image{
+    filter: invert(0%);
+}
 .leftmenu-link:hover{
     background: var(--color-white);
     color: var(--color-green);
 }
-.leftmenu-link:hover .leftmenu-link-image{
-    filter: invert(0);
-}
+
 .bold{
     font-weight: bold;
 }
@@ -161,7 +165,8 @@ img {
     width: 24px;
     position: absolute;
     margin-top: -32px;
-    filter: invert(1);
+    filter: invert(100%);
+    transition:all .3s linear;
 }
 
 .leftmenu-content {
@@ -315,7 +320,25 @@ input {
     text-align: left;
     color: var(--color-green);
 }
-
+.mt-big{
+    margin-top:48px;
+}
+.input-span{
+    display: block;
+    position: relative;
+    width: 100px;
+    /*margin-right: 27px;*/
+    margin-top: 9px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
 ::-webkit-input-placeholder { /* Chrome */
     font-family: Arial;
     font-size: 14px;
@@ -475,6 +498,16 @@ input {
     background: none;
 
 }
+.form-profile-empty-input input{
+    position: relative;
+    margin-bottom: 13px;
+    width: 100%;
+    max-width: 100%;
+    border: solid 1px #095c5c;
+    outline: none;
+    padding: 9px 11.4px 10.7px 20px;
+    background: none;
+}
 .profile-box-form {
     width: 100%;
     height: auto;
@@ -489,6 +522,9 @@ input {
     flex-basis: 47%;
     align-self: stretch;
     /*flex-grow:1;*/
+}
+.profile-block-box > div  .form-login-input input{
+    width: 100%;
 }
 .px20{
     font-size:20px;

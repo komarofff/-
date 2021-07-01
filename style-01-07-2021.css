@@ -146,13 +146,15 @@ img {
     transition:all .3s linear;
     z-index:1;
 }
+
+.leftmenu-list:hover .leftmenu-link-image{
+    filter: invert(0%);
+}
 .leftmenu-link:hover{
     background: var(--color-white);
     color: var(--color-green);
 }
-.leftmenu-link:hover .leftmenu-link-image{
-    filter: invert(0);
-}
+
 .bold{
     font-weight: bold;
 }
@@ -161,7 +163,8 @@ img {
     width: 24px;
     position: absolute;
     margin-top: -32px;
-    filter: invert(1);
+    filter: invert(100%);
+    transition:all .3s linear;
 }
 
 .leftmenu-content {
