@@ -118,7 +118,7 @@ img {
     align-self: stretch;
     min-width: 333px;
     max-width: 100%;
-    padding: 30px 25px;
+    padding: 30px 25px 30px 46px;
     background-color: #095c5c;
 
 }
@@ -135,7 +135,7 @@ img {
     position: relative;
     display: block;
     width: 333px;
-    padding: 10px 0 10px 21%;
+    padding: 10px 0 10px 33%;
     font-family: PT Sans;
     font-size: 14px;
     font-weight: normal;
@@ -147,7 +147,7 @@ img {
     text-decoration: none;
     color: var(--color-white);
     /*margin-bottom: 23px;*/
-    margin-left: -25px;
+    margin-left: -46px;
     transition: all .3s linear;
     z-index: 1;
 }
@@ -328,10 +328,6 @@ img {
     align-items: center;
     flex-wrap: nowrap;
     transition: background .3s linear;
-}
-
-input[type='file'] {
-    cursor: pointer;
 }
 
 .button-green-file:hover {
@@ -578,6 +574,33 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 
 }
 
+input[type='file'] {
+    cursor: pointer;
+}
+option {
+    position: relative;
+    font-size:16px;
+    margin-bottom: 13px;
+    width: 100%;
+    max-width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+    outline: none;
+    padding: 9px 12px 11px 20px;
+    background: none;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select.arrows {
+    background-image:    url('images/down-select.png');
+    background-position: calc(100% - .5rem), 100%0;
+    background-size:  1em 1em;
+    background-repeat: no-repeat;
+}
 .form-profile-empty-input input {
     position: relative;
     margin-bottom: 13px;
