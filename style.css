@@ -400,7 +400,14 @@ img {
     flex-wrap: nowrap;
     transition: background .3s linear;
 }
-
+.off{
+    float: right;
+    padding-right: 4px;
+}
+.on{
+    float: left;
+    padding-left: 4px;
+}
 .button-white:hover {
     background-color: var(--color-green);
     color: var(--color-white);
@@ -425,6 +432,7 @@ img {
     letter-spacing: normal;
     text-align: left;
     text-transform: uppercase;
+
 }
 .button-on-inner-button{
     position: absolute;
@@ -432,9 +440,17 @@ img {
     margin-left: 20px;
     width: 32px;
     height: 22px;
-
+    transition: .1s linear;
     border-radius: 40px;
     background-color: #ffffff;
+}
+.button-on:active{
+    background: rgba(9, 92, 92, 0.5);
+    border:none;
+}
+.button-on:active .button-on-inner-button{
+    margin-left: -24px;
+
 }
 
 .button-off{
@@ -444,10 +460,10 @@ img {
     height: 30px;
     padding: 4px 13px 4px 4px;
     border-radius: 40px;
-    background-color: rgba(9, 92, 92, 0.5);
+    background: rgba(9, 92, 92, 0.5);
     color: var(--color-white);
     outline: none;
-    border:1px solid rgba(9, 92, 92, 0.5);;
+    border:none;
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
@@ -461,12 +477,20 @@ img {
 .button-off-inner-button{
     position: absolute;
     margin-top: -4px;
-    margin-left: -69px;
+    margin-left: -48px;
     width: 32px;
     height: 22px;
-
+    transition: .1s linear;
     border-radius: 40px;
     background-color: #ffffff;
+}
+.button-off:active{
+    background: var(--color-green);
+    border:none;
+}
+.button-off:active .button-off-inner-button{
+    margin-left: 0;
+
 }
 /* FORMS */
 
