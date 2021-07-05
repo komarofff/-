@@ -928,9 +928,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     position: relative;
 }
 .account_opened{
+    border:1px solid var(--color-green);
     display: none;
     position: absolute;
     width: 230px;
+    top: 15px;
+    right: -13px;
     list-style: none;
     font-family: Arial;
     font-size: 14px;
@@ -942,8 +945,54 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     text-align: left;
     color: var(--color-white);
     background: var(--color-green);
-    padding: 10px;
+    /*padding: 10px;*/
 }
+.account_opened li{
+    padding: 5px;
+}
+.account_opened li:hover{
+    color: var(--color-green);
+    background: var(--color-white);
+}
+#account_opened:hover .account_opened{
+    display:block;
+}
+/*--------*/
+#status{
+    position: relative;
+}
+.status{
+    border:1px solid var(--color-green);
+    display: none;
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    right: -13px;
+    list-style: none;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-white);
+    background: var(--color-green);
+    /*padding: 10px;*/
+}
+.status li{
+    padding: 5px;
+}
+.status li:hover{
+    color: var(--color-green);
+    background: var(--color-white);
+}
+#status:hover .status{
+    display:block;
+}
+
+/*-------*/
 .user-list-option{
     border:none;
     padding:20px;
@@ -953,7 +1002,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 .user-list{
     display: grid;
     width: 100%;
-    grid-template-columns: 12fr 8fr 12fr 4fr 1fr;
+    grid-template-columns: 6fr 3fr 6fr 3fr 1fr;
     grid-gap: 20px;
     cursor: pointer;
     justify-items: flex-start;
