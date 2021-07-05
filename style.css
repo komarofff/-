@@ -924,6 +924,32 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     margin-top: 20px;
 }
 /* USER LIST */
+#account_opened{
+    position: relative;
+}
+.account_opened{
+    display: none;
+    position: absolute;
+    width: 230px;
+    list-style: none;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-white);
+    background: var(--color-green);
+    padding: 10px;
+}
+.user-list-option{
+    border:none;
+    padding:20px;
+    background: var(--color-green);
+    color: var(--color-white);
+}
 .user-list{
     display: grid;
     width: 100%;
@@ -933,10 +959,19 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     justify-items: flex-start;
     align-items: center;
 }
+.select-area{
+    position: relative;
+    border:none;
+    outline: none;
+    background: transparent;
+}
 .select-area::after{
     content: url('images/little-arrow-bottom.svg');
     position: absolute;
     margin-top: -3px;
+
+}
+.select-area:hover{
 
 }
 .open-user-profile{
