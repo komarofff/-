@@ -895,6 +895,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     background: var(--color-white);
     margin-right: 15px;
 }
+
 .checkbox-text{
     display: block;
     max-width: 290px;
@@ -961,6 +962,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     display:block;
 }
 /*--------*/
+.user-block{
+    position: relative;
+}
 .flex-2-column{
     width: 30%;
     margin-top: 42px;
@@ -979,6 +983,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     display: none;
 }
 .user-info {
+    display:none;
     position: relative;
     margin-top: -10px;
     height: 272px;
@@ -1101,6 +1106,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     position: absolute;
     margin-left: -25px;
     margin-top: -4px;
+}
+.border-white{
+    border: 1px solid #fff;
 }
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
