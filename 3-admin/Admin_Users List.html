@@ -138,11 +138,13 @@
 
     users = document.querySelectorAll(".open-user-profile.open-info")
     for (let i = 0; i < users.length; i++) {
+
         users[i].addEventListener("click", (event) => {
+            console.log(users[i])
             event.target.classList.remove("open-info")
             event.target.classList.add("minus")
             event.target.src = `../images/minus.svg`
-            event.target.style.filter = `invert(100%) brightness(160%)`
+            event.target.style.cssText = `filter: invert(100%) brightness(160%)`
             let blockView = event.target.parentNode.parentNode.querySelector(".view-profile")
             blockView.style.cssText = `background: #095c5c; color: #fff;`
             let style = document.createElement('style');
@@ -156,10 +158,8 @@
             let usersClose = document.querySelector(".open-user-profile.minus")
             if (usersClose) {
                 usersClose.addEventListener("click", (event) => {
-                    event.target.classList.remove("minus")
-                    event.target.classList.add("open-info")
-                    event.target.src = `../images/plus.svg`
-                    event.target.style.filter = ``
+                   event.target.src = `../images/plus.svg`
+                    event.target.style.cssText= ` `
                     let blockView2 = event.target.parentNode.parentNode.querySelector(".view-profile")
                     blockView2.style.cssText = ``
                     let style2 = document.createElement('style');
@@ -168,6 +168,8 @@
                     event.target.parentNode.parentNode.style.cssText = ``
                     let parentDiv2 = event.target.parentNode.parentNode.parentNode.querySelector(".user-info")
                     parentDiv2.style.display = `none`
+                    event.target.classList.remove("minus")
+                    event.target.classList.add("open-info")
 
                 })
             }
