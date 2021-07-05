@@ -996,7 +996,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: var(--color-white);
 }
 .pl-13{
-    padding-left: 13px;
+    padding-left: 6px;
 }
 #status{
     position: relative;
@@ -1067,7 +1067,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 }
 .open-user-profile{
-    width: 50px;
+    width: 40px;
 }
 .pl-17{
     padding-left: 17px;
