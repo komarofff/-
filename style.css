@@ -923,6 +923,58 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 .profile-block-box {
     margin-top: 20px;
 }
+/* USER LIST */
+.user-list{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 12fr 8fr 12fr 4fr 1fr;
+    grid-gap: 20px;
+    cursor: pointer;
+    justify-items: flex-start;
+    align-items: center;
+}
+.select-area::after{
+    content: url('images/little-arrow-bottom.svg');
+    position: absolute;
+    margin-top: -3px;
+
+}
+.open-user-profile{
+    width: 50px;
+}
+.pl-17{
+    padding-left: 17px;
+}
+.user-list-text{
+   margin: 10px 0;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
+.view-profile{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-green);
+    padding-left: 30px;
+}
+.view-profile::before{
+    content: url('images/user.svg');
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -4px;
+}
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     .box-2-box {
