@@ -670,6 +670,22 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     left: 0;
     width: 32px;
 }
+.search-users{
+    position: relative;
+    height: 40px;
+    margin: 28px 0.4px 29px 1px;
+    padding: 11.5px 852.6px 11.5px 40px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.search-button{
+    position: absolute;
+    margin-top: -59px;
+    margin-left: 10px;
+}
 /* PROFILE FORMS */
 .box-2-box {
     /*display: grid;*/
