@@ -928,6 +928,8 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     position: relative;
 }
 .account_opened{
+    transition: .3s linear;
+    z-index:10;
     border:1px solid var(--color-green);
     display: none;
     position: absolute;
@@ -949,6 +951,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .account_opened li{
     padding: 5px;
+    transition: .3s linear;
 }
 .account_opened li:hover{
     color: var(--color-green);
@@ -958,10 +961,49 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     display:block;
 }
 /*--------*/
+.flex-2-column{
+    width: 30%;
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.flex-2-column div p{
+    margin-top: 10px;
+}
+.user-data{
+    position: relative;
+}
+#info_for_user1{
+    display: none;
+}
+.user-info {
+    position: relative;
+    margin-top: -10px;
+    height: 272px;
+    padding: 17px;
+}
+.user-info-text{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-white);
+}
+.pl-13{
+    padding-left: 13px;
+}
 #status{
     position: relative;
 }
 .status{
+    transition: .3s linear;
+    z-index:10;
     border:1px solid var(--color-green);
     display: none;
     position: absolute;
@@ -983,6 +1025,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .status li{
     padding: 5px;
+    transition: .3s linear;
 }
 .status li:hover{
     color: var(--color-green);
