@@ -975,6 +975,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .account_opened {
+    box-shadow: 0 0 5px #fff;
     transition: .3s linear;
     z-index: 10;
     border: 1px solid var(--color-green);
@@ -1066,6 +1067,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .status {
+    box-shadow: 0 0 5px #fff;
     transition: .3s linear;
     z-index: 10;
     border: 1px solid var(--color-green);
@@ -1205,6 +1207,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     .profile-box-form{
         padding: 15px;
     }
+    .user-list,.user-list-header{
+        grid-template-columns: 3fr 3fr 3fr 2fr 1fr;
+    }
 }
 
 @media (max-width: 990px) {
@@ -1300,6 +1305,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 
     .double-blocks div:nth-child(1) {
         width: 30%;
+    }
+    .form-profile-label{
+        font-size: 14px;
+    }
+    .user-list-text{
+        font-size: 13px;
     }
 }
 
