@@ -43,7 +43,16 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-
+.row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.invert img{
+    filter: invert(100%) brightness(160%);
+}
 .box-to-box {
     display: flex;
     justify-content: center;
