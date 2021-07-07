@@ -52,6 +52,7 @@ img {
     align-items: center;
 }
 
+
 .invert img {
     filter: invert(100%) brightness(160%);
 }
@@ -1223,9 +1224,17 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 .stripes{
     position: relative;
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(14,88px);
-    justify-items: center;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(14,88px);*/
+    /*justify-items: center;*/
+    display: flex;
+    justify-content: flex-start;
+}
+.stripes div{
+    margin:0 44px;
+}
+.stripes div:nth-child(1){
+    margin:0;
 }
 .vertical-stripe {
     width: 1px;
@@ -1233,10 +1242,11 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     background: #707070;
 }
 .hor-stripe{
-    width: 100%;
+    margin-left: 49px;
+
     display: grid;
     grid-template-columns: repeat(12,88px);
-    justify-items: center;
+    justify-content: flex-start;
     font-family: Arial;
     font-size: 14px;
     font-weight: normal;
@@ -1248,18 +1258,74 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #707070;
 }
 .hor-stripe > p{
-    margin-top: 8px;
+    padding-top: 8px;
     width: 100%;
     border-top: 1px solid #707070;
 }
-.hor-stripe > p:nth-child(1){
-    border-top: none;
-}
+
 .total{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+.years-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.year{
+    align-self: center;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #095c5c;
+    margin-bottom: 10px;
+}
+.year-arrows{
+    align-self: center;
+}
+.year-text{
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
+.circle-gray{
+    width: 10px;
+    height: 10px;
+    border: solid 1px #707070;
+    background: #707070;
+    border-radius: 50%;
+
+}
+.years-block > .circle-gray{
+    margin:15px 0 7px 0;
+    align-self: flex-start;
+}
+.row-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.cut-block{
+    width: 37%;
+    align-self: stretch;
+}
+.one-block{
+    grid-template-columns: 1fr;
 }
 /* BREAKPOINTS */
 @media (max-width: 1400px) {
@@ -1316,6 +1382,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 768px) {
+    .hor-stripe,.stripes{
+        display: none;
+    }
     .double-blocks-5 {
         grid-template-columns: 1fr 1fr 1fr;
     }
