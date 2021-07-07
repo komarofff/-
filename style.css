@@ -1463,7 +1463,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .gallery-box{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 7px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(333px,1fr));
     grid-gap:30px;
@@ -1538,7 +1538,20 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     text-align: left;
     color: #686363;
 }
+.flex-end{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 100%;
+    padding-right: 40px;
 
+}
+.flex-end-arrow{
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    cursor: pointer;
+}
 /* BREAKPOINTS */
 @media (max-width: 1412px) {
     .row-gallery {
