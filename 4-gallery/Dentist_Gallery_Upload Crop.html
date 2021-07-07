@@ -62,94 +62,121 @@
         </div>
 
     </div>
-    <div class="main-profile bg-white row-wrap">
-        <div class="profile-box-form cut-block">
-            <div class="form-info-block one-block">
-                <div>
-                    <p class="form-login-title green px20">Upload Before Image</p>
-                    <p class="form-login-subtitle gray px12 mb-6px">Add and edit your images</p>
+    <div class="main-profile bg-white ">
+        <div class="row-gallery">
+            <div class="profile-box-form cut-block">
+                <div class="form-info-block one-block">
+                    <div>
+                        <p class="form-login-title green px20">Upload Before Image</p>
+                        <p class="form-login-subtitle gray px12 mb-6px">Add and edit your images</p>
+                    </div>
+                </div>
+
+                <div class="profile-block-box">
+                    <div class="gallery-block-image">
+                        <p class="form-login-buttons gallery-preview">
+                            <button class="button-green-outline">PREVIEW</button>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="form-profile-label">
+                            Title
+                        </p>
+                        <p>
+                            <input class="form-profile-input" type="text" name="title" id="title" value=""
+                                   placeholder="Image Title">
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="form-profile-label">
+                            Alt Tags
+                        </p>
+                        <p>
+                            <input class="form-profile-input" type="text" name="tags" id="tags"
+                                   value=""
+                                   placeholder="Alt Tag">
+                        </p>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="profile-block-box">
 
-                <div>
-                    <p class="form-profile-label">
-                        <label class="form-profile-label" for="email">Contact Email</label>
-                    </p>
-                    <p>
-                        <input class="form-profile-input" type="email" name="email" id="email" value=""
-                               placeholder="John.smith@dental.co.uk">
-                    </p>
+            <div class="profile-box-form cut-block">
+                <div class="form-info-block one-block">
+                    <div>
+                        <p class="form-login-title green px20">Upload After Image</p>
+                        <p class="form-login-subtitle gray px12 mb-6px">Add and edit your images</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p class="form-profile-label">
-                        <label class="form-profile-label" for="Qualifications">Qualifications</label>
-                    </p>
-                    <p>
-                        <input class="form-profile-input" type="text" name="Qualifications" id="Qualifications"
-                               value=""
-                               placeholder="Notes Here">
-                    </p>
+                <div class="profile-block-box">
+                    <div class="gallery-block-image">
+                        <p class="row-content gallery-upload">
+                            <label class="button-green-file" from="cover_image">Upload</label>
+                            <input type="file" class="input-file" name="cover_image" id="cover_image">
+                        </p>
+                    </div>
+                    <div>
+                        <p class="form-profile-label">
+                            Title
+                        </p>
+                        <p>
+                            <input class="form-profile-input" type="text" name="title" id="title" value=""
+                                   placeholder="Image Title">
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="form-profile-label">
+                            Alt Tags
+                        </p>
+                        <p>
+                            <input class="form-profile-input" type="text" name="tags" id="tags"
+                                   value=""
+                                   placeholder="Alt Tag">
+                        </p>
+                    </div>
+
                 </div>
+            </div>
+
+        </div>
+        <div class="row-gallery">
+            <div class="profile-box-form cut-block-2">
+                <div class="profile-block-box">
+                    <div>
+                        <p class="form-profile-label">
+                            <label class="form-profile-label">Service</label>
+                        </p>
+                        <div class="row-content space-between">
+                            <select class="gallery-select" name="services" id="services">
+                                <option value="" disabled selected>Select from your services</option>
+                                <option value="">Service 1</option>
+                                <option value="">Service 2</option>
+                                <option value="">Service 3</option>
+                                <option value="">Service 4</option>
+                            </select>
+                            <img class="gallery-select-arrow" src="images/down-select.png" alt="select">
+                            <p class="checkbox">
+                                <input type="checkbox" name="delete" id="delete"
+                                       value="">
+                                <span class="gallery-checkbox-text">
+                                I confirm I have full rights for the use and publication   of these images.
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-button-block">
                 <p class="form-login-buttons">
                     <button class="button-green">Confirm</button>
                 </p>
-                <p class="row-content">
-                    <label class="button-green-file" from="cover_image">Upload</label>
-                    <input type="file" class="input-file" name="cover_image" id="cover_image">
-                </p>
-            </div>
-        </div>
-
-
-        <div class="profile-box-form cut-block">
-            <div class="form-info-block one-block">
-                <div>
-                    <p class="form-login-title green px20">Upload Before Image</p>
-                    <p class="form-login-subtitle gray px12 mb-6px">Add and edit your images</p>
-                </div>
-            </div>
-
-            <div class="profile-block-box">
-
-                <div>
-                    <p class="form-profile-label">
-                        <label class="form-profile-label" for="email">Contact Email</label>
-                    </p>
-                    <p>
-                        <input class="form-profile-input" type="email" name="email" id="email" value=""
-                               placeholder="John.smith@dental.co.uk">
-                    </p>
-                </div>
-
-                <div>
-                    <p class="form-profile-label">
-                        <label class="form-profile-label" for="Qualifications">Qualifications</label>
-                    </p>
-                    <p>
-                        <input class="form-profile-input" type="text" name="Qualifications" id="Qualifications"
-                               value=""
-                               placeholder="Notes Here">
-                    </p>
-                </div>
                 <p class="form-login-buttons">
-                    <button class="button-green">Confirm</button>
+                    <button class="button-green-outline">Cancel</button>
                 </p>
-
-            </div>
-        </div>
-        <div class="profile-box-form ">
-            <div class="form-info-block one-block">
-                <div>
-                    <p class="form-login-title green px20">Upload Before Image</p>
-                    <p class="form-login-subtitle gray px12 mb-6px">Add and edit your images</p>
-                </div>
-            </div>
-
-            <div class="profile-block-box">
-
             </div>
         </div>
 
