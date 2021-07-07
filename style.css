@@ -1871,8 +1871,8 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     }
 }
 @media (max-width: 350px) {
-    .button-green,.button-green-outline{
-        padding: 13px 7px;
-    }
+    /*.button-green,.button-green-outline{*/
+    /*    padding: 13px 7px;*/
+    /*}*/
 
 }
