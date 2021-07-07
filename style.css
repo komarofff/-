@@ -217,10 +217,11 @@ img {
 }
 
 .leftmenu-user-information {
+    width: 270px;
     margin-top: 70px;
     margin-bottom: 13px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -241,6 +242,7 @@ img {
 }
 
 .user-description {
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1865,6 +1867,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 
     .profile-box-form {
         padding: 9px;
-        width: 100vw;
+        width: 97vw;
     }
+}
+@media (max-width: 350px) {
+    .button-green,.button-green-outline{
+        padding: 13px 7px;
+    }
+
 }
