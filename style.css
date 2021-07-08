@@ -1582,7 +1582,64 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     cursor: pointer;
 }
 
+.footer {
+    width: 100%;
+    height: 338px;
+    background: rgba(9, 92, 92, 0.1);
+    padding: 45px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
 
+.footer div {
+    flex-bottom: 50%;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 50px;
+    padding: 18px 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #ffffff;
+}
+.footer-title{
+    display: block;
+    max-width: 250px;
+    font-family: PT Serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.38px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 9px;
+}
+.footer-text {
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #787878;
+}
 
 /* BREAKPOINTS */
 @media (max-width: 1412px) {
@@ -1676,9 +1733,10 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 768px) {
-    .leftmenu-link{
+    .leftmenu-link {
         font-size: 20px;
     }
+
     .search-gallery > .search-users {
         width: 55%;
     }
@@ -1919,16 +1977,35 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     /*}*/
 
 }
+
 .mobile-menu-run {
     transition: .3s linear;
     transform: translate(-99vw, 52%);
 }
+
 .mobile-menu-stop {
     transition: .3s linear;
     transform: translate(50vw, 52%);
 }
+
 .menu-logo-close {
     cursor: pointer;
     fill: #fae2ca;
     width: 37px;
+}
+.menu-logo-top{
+    cursor: pointer;
+    fill: #fae2ca;
+    width: 37px;
+}
+#top_menu{
+    position: fixed;
+    margin-bottom: 50px;
+}
+.fixed{
+    position: fixed;
+    z-index:10;
+}
+.page{
+    padding-top: 72px;
 }

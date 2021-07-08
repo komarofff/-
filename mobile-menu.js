@@ -12,6 +12,7 @@ function openMenu(mobile) {
         document.querySelector(".leftmenu-content").classList.remove("mobile-menu-stop")
         document.querySelector(".leftmenu-content").classList.add("mobile-menu-run")
         const mobileClose = document.querySelector(".menu-logo-close")
+        console.log("open")
         closeMenu(mobileClose)
     })
 }
@@ -24,6 +25,7 @@ function closeMenu(mobileClose) {
         document.querySelector(".leftmenu-content").classList.remove("mobile-menu-run")
         document.querySelector(".leftmenu-content").classList.add("mobile-menu-stop")
         const  mobile = document.querySelector(".menu-logo")
+        console.log("close")
         openMenu(mobile)
     })
 }
