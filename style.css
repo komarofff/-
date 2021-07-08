@@ -1593,9 +1593,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     flex-wrap: nowrap;
 }
 
-.footer div {
-    flex-bottom: 50%;
-}
+/*.footer div {*/
+/*    flex-basis: 50%;*/
+/*}*/
 
 .footer-bottom {
     width: 100%;
@@ -1606,7 +1606,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     justify-content: space-between;
     align-items: center;
     font-family: PT Sans;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -1631,7 +1631,7 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .footer-text {
     font-family: PT Sans;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -1640,7 +1640,34 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     text-align: left;
     color: #787878;
 }
-
+.footer-menu{
+    flex-basis:  50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-menu ul{
+    list-style: none;
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #787878;
+}
+.footer-menu ul li a:hover{
+    color: #095c5c;
+}
 /* BREAKPOINTS */
 @media (max-width: 1412px) {
     .row-gallery {
@@ -1673,6 +1700,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 1200px) {
+    .footer-menu {
+        flex-basis: 60%;
+    }
     .search-gallery > .search-users {
         width: 60%;
     }
@@ -1733,6 +1763,14 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 768px) {
+    .footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .footer-menu{
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
     .leftmenu-link {
         font-size: 20px;
     }
@@ -1900,6 +1938,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 490px) {
+    .footer-menu{
+        flex-wrap: wrap;
+    }
+    .footer-menu ul {
+    flex-basis: 100%;
+    }
     .search-gallery > .search-button {
         margin-top: -20px;
     }
