@@ -111,8 +111,22 @@ img {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-}
 
+}
+.index-main-box {
+    background: #fff;
+    height: 100%;
+}
+.main-index {
+    width: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: 20px;
+}
 .main-profile {
     padding: 10px 20px;
     width: 100%;
@@ -1502,43 +1516,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     height: 333px;
     object-fit: contain;
 }
-
-.gallery-image-watermark {
-    position: absolute;
-    right: 18px;
-    top: 17px;
-    font-family: PT Sans;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: #f6f6f6;
-    text-transform: uppercase;
-}
-
 .gallery-image-description {
     padding: 20px;
     position: relative;
-}
-
-.gallery-image-edit {
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 54px;
-    width: 22px;
-}
-
-.gallery-image-delete {
-    cursor: pointer;
-    position: absolute;
-    width: 40px;
-    right: 11px;
-    cursor: pointer;
-    top: 8px;
 }
 
 .gallery-image-title {
@@ -1564,6 +1544,41 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     letter-spacing: 0.5px;
     text-align: left;
     color: #686363;
+}
+
+.gallery-image-watermark {
+    position: absolute;
+    right: 18px;
+    top: 17px;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #f6f6f6;
+    text-transform: uppercase;
+}
+
+
+
+.gallery-image-edit {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 54px;
+    width: 22px;
+}
+
+.gallery-image-delete {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    right: 11px;
+    cursor: pointer;
+    top: 8px;
 }
 
 .flex-end {
@@ -1668,6 +1683,91 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 .footer-menu ul li a:hover{
     color: #095c5c;
 }
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 50%;
+    align-items: center;
+}
+.social-icons img{
+    padding-top: 5px;
+    margin-right: 20px;
+}
+/*  --------------------  */
+
+.index-gallery-box {
+    width: 100%;
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
+    grid-gap: 30px;
+}
+
+.index-gallery-image-box {
+    justify-self: center;
+    position: relative;
+    width: 216px;
+    height: 288px;
+    border: solid 1px #f6f6f6;
+    background-color: #f6f6f6;
+}
+
+.index-gallery-image {
+    width: 216px;
+    height: 216px;
+    object-fit: contain;
+}
+.index-gallery-image-description {
+    padding: 10px ;
+    position: relative;
+}
+
+.index-gallery-image-title {
+    font-family: PT Serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.79px;
+    text-align: left;
+    color: #333333;
+}
+
+.index-gallery-image-text {
+    margin-top: 9px;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #686363;
+}
+.index-gallery-image-watermark {
+    position: absolute;
+    right: 18px;
+    top: 17px;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #f6f6f6;
+    text-transform: uppercase;
+}
+.map{
+    box-shadow: 5px 5px 10px #ccc;
+}
+/*.left-size{*/
+/*    max-width: 0px;*/
+/*}*/
+/* ----------------------  */
 /* BREAKPOINTS */
 @media (max-width: 1412px) {
     .row-gallery {
