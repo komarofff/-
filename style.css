@@ -1920,6 +1920,10 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     transition: .3s linear;
     transform: translate(-99vw, 52%);
 }
+.mobile-menu-stop {
+    transition: .3s linear;
+    transform: translate(50vw, 52%);
+}
 .menu-logo-close {
     cursor: pointer;
     fill: #fae2ca;
