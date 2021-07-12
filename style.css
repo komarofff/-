@@ -2031,12 +2031,91 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .index-leftmenu {
+    position: relative;
     min-width: 333px;
+    max-width: 333px;
     background: #f6f6f6;
     align-self: stretch;
-    padding: 0 20px 20px;
+    /*padding: 0 20px 20px;*/
 }
+.index-leftmenu-profile-information{
+    position: relative;
+    margin-top: -84px;
+    padding: 20px 10px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.index-leftmenu-profile-photo{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+.leftmenu-index-cover-image {
+    width: 100%;
+}
+.m-none{
+    margin:0;
+}
+.mt-30{
+    margin-top:30px;
+}
+.index-leftmenu-text{
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.69px;
+    text-align: left;
+    color: #101010;
+}
+.index-leftmenu-text p{
+    margin-top:18px;
+}
+.index-green-button{
+    min-width: 82px;
+    cursor: pointer;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    margin: 10px 10px 0 0;
+    max-width: 180px;
+    padding: 13px 13px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    border: solid 2px var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: background .3s linear;
+    text-transform: none;
+    font-family: PT Sans;
+    font-size: 9px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+.index-green-button:hover{
+    color: var(--color-green);
+    background: var(--color-white);
+}
+.button-list{
+    margin: 34px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 
+}
+.button-list >p span{
+    margin: 5px 0;
+}
 .index-dentist-gallery-image {
     width: 247px;
     height: 247px;
@@ -2072,7 +2151,8 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     text-align: center;
     color: #ffffff;
 }
-.title-dentist{
+
+.title-dentist {
     display: none;
     padding: 20px;
     font-family: PT Serif;
@@ -2085,11 +2165,13 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     text-align: left;
     color: #095c5c;
 }
-.box-right-column{
+
+.box-right-column {
     display: flex;
     flex-direction: column;
 
 }
+
 /*.left-size{*/
 /*    max-width: 0px;*/
 /*}*/
