@@ -2179,7 +2179,11 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     flex-direction: column;
 
 }
-
+.relative-img{
+    position: relative;
+    top: 3px;
+    left: 20px;
+}
 /*.left-size{*/
 /*    max-width: 0px;*/
 /*}*/
