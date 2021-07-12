@@ -2055,6 +2055,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 .leftmenu-index-cover-image {
     width: 100%;
 }
+.bg-gray{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #f6f6f6;
+}
 .m-none{
     margin:0;
 }
@@ -2120,10 +2126,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     width: 247px;
     height: 247px;
 }
-
+.relative{
+    position: relative;
+}
 .index-dentist-gallery-box {
     width: 100%;
-    margin-top: 7px;
+    margin-top: 55px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
     grid-gap: 20px;
@@ -2315,6 +2323,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 768px) {
+    .empty{
+       height: 90px;
+    }
     .footer-bottom {
         width: 100%;
         height: auto;
@@ -2557,6 +2568,10 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 
     .mobile-topmenu {
         margin-left: -10vw;
+    }
+    .bg-gray{
+        right: 2vw;
+        width: 95vw;
     }
 }
 
