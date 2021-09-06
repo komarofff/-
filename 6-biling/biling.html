@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../style.css" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">-->
+
+    <title>Dentist_Account_Free Account</title>
+    <style>
+        /*.biling {*/
+        /*    max-height: unset;*/
+        /*    min-height: unset;*/
+        /*}*/
+
+        /*ol, ul {*/
+        /*    padding-left: 0;*/
+        /*}*/
+
+        /*.logout {*/
+        /*    margin-top: 0;*/
+        /*}*/
+
+        /*.leftmenu-content {*/
+        /*    position: relative;*/
+        /*}*/
+
+    </style>
+    <style>
+        fieldset.FormGroup {
+            border: none;
+        }
+
+        .AppWrapper {
+            width: 25vw !important;
+        }
+        @media(max-width:1280px){
+            .AppWrapper {
+                width: 50vw !important;
+            }
+        }
+        @media(max-width:768px){
+            .AppWrapper {
+                width: 90vw !important;
+            }
+        }
+        .AppWrapper {
+            margin: 0;
+            font-family: sans-serif, Verdana;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+        @media (min-width: 1200px) {
+            .col-xl-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+        @media (min-width: 1200px) {
+            .col-xl-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+        }
+
+            .col-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+
+        .mx-auto {
+            margin-right: auto!important;
+            margin-left: auto!important;
+        }
+        .mt-3 {
+            margin-top: 1rem!important;
+        }
+        label {
+            display: inline-block;
+        }
+        .form-label {
+            margin-bottom: .5rem;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .AppWrapper>  button, .AppWrapper> input, .AppWrapper> optgroup, .AppWrapper> select, .AppWrapper> textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+        .btn-danger{
+            color: #fff;
+            background-color: #ac0303;
+            border-color: #970707;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn-danger:hover {
+            color: #fff;
+            background-color: #8b0000;
+            border-color: #740505;
+        }
+        .btn-success {
+            color: #fff;
+            background-color: #198754;
+            border-color: #198754;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn-success:hover {
+            color: #fff;
+            background-color: #157347;
+            border-color: #146c43;
+        }
+        .btn {
+
+        }
+        .AppWrapper> button, .AppWrapper>select {
+            text-transform: none;
+        }
+        .form-control:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        }
+        .btn-check:active+.btn-success, .btn-check:checked+.btn-success, .btn-success.active, .btn-success:active, .show>.btn-success.dropdown-toggle {
+            color: #fff;
+            background-color: #146c43;
+            border-color: #13653f;
+        }
+        .btn-check:active+.btn-success:focus, .btn-check:checked+.btn-success:focus, .btn-success.active:focus, .btn-success:active:focus, .show>.btn-success.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.25rem rgb(60 153 110 / 50%);
+        }
+        .AppWrapper [type=button]:not(:disabled),.AppWrapper [type=reset]:not(:disabled), .AppWrapper [type=submit]:not(:disabled),.AppWrapper button:not(:disabled) {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<section class="container-profile ">
+    <div class="leftmenu">
+        <div class="mobile-topmenu">
+            <p class="menu" id="mobile_menu">
+                <svg class="menu-logo" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 28 20"
+                     width="20px">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </p>
+            <p>
+                <a href="/"><img src="../images/FYD4_beige-on-green@2x.png"
+                                 srcset="../images/FYD4_beige-on-green@2x.png 2x,
+             ../images/FYD4_beige-on-green@3x.png 3x"
+                                 class="logo-image">
+                </a>
+            </p>
+            <p>
+                <img class="user-image-mobile" src="../images/user-image.png" alt="user image">
+            </p>
+        </div>
+        <div class="leftmenu-content">
+            <p>
+                <a href="/"><img src="../images/FYD4_beige-on-green@2x.png"
+                                 srcset="../images/FYD4_beige-on-green@2x.png 2x,
+             ../images/FYD4_beige-on-green@3x.png 3x"
+                                 class="logo-image desctop-visible" alt="logo image">
+                </a>
+            </p>
+            <div class="leftmenu-user-information">
+                <img class="user-image" src="../images/user-image.png" alt="user image">
+                <p class="user-description white"><span>Name</span> <span>Surname</span></p>
+            </div>
+            <ul class="leftmenu-nav-menu">
+                <li class="leftmenu-list">
+                    <a class="leftmenu-link " href="#">Profile </a>
+                    <img class="leftmenu-link-image" src="../images/user.svg" alt="link image">
+                </li>
+                <li class="leftmenu-list"><a class="leftmenu-link" href="#">Gallery </a>
+                    <img class="leftmenu-link-image" src="../images/gallery.svg" alt="link image">
+                </li>
+                <li class="leftmenu-list  active"><a class="leftmenu-link" href="#">Account </a>
+                    <img class="leftmenu-link-image" src="../images/more_vert.svg" alt="link image">
+                </li>
+                <li class="leftmenu-list logout"><a class="leftmenu-link bold" href="#">Logout </a>
+                    <img class="leftmenu-link-image" src="../images/left-arrow.svg" alt="link image">
+                </li>
+                <li class="fill-mobile"></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="main-profile bg-white biling">
+        <div class="profile-box-form">
+            <div class="form-info-block">
+                <div>
+                    <p class="form-login-title green px20">Billing Information</p>
+                    <p class="form-login-subtitle gray px12 mb-6px"></p>
+                </div>
+            </div>
+            <div class="box-to-box " style="margin-top: -20px; margin-bottom: 10%;">
+                <div style="margin: 50px auto; ">
+                    <div class="AppWrapper col-12 col-xl-8 mx-auto">
+                        <form class="Form">
+                            <fieldset class="FormGroup">
+                                <div class="col-12 col-xl-6 mt-3 mx-auto"><label for="name"
+                                                                                 class="form-label">Name</label><input
+                                        class="form-control" id="name" type="text" placeholder="Jane Doe" required=""
+                                        autocomplete="name" value=""></div>
+                                <div class="col-12 col-xl-6 mt-3 mx-auto"><label for="email"
+                                                                                 class="form-label">Email</label><input
+                                        class="form-control" id="email" type="email" placeholder="janedoe@gmail.com"
+                                        required="" autocomplete="email" value=""></div>
+                                <div class="col-12 col-xl-6 mt-3 mx-auto"><label for="phone"
+                                                                                 class="form-label">Phone</label><input
+                                        class="form-control" id="phone" type="tel" placeholder="(941) 555-0123"
+                                        required="" autocomplete="tel" value=""></div>
+                            </fieldset>
+                            <fieldset class="FormGroup">
+                                <div class="col-12 col-xl-6 mx-auto mt-3">
+                                    <div class="StripeElement StripeElement--empty">
+                                        <div class="__PrivateStripeElement"
+                                             style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;">
+                                            <iframe name="__privateStripeFrame7477" frameborder="0"
+                                                    allowtransparency="true" scrolling="no" allow="payment *"
+                                                    src="https://js.stripe.com/v3/elements-inner-card-55910691501eff0a4076414ea10d0434.html#wait=true&amp;style[base][iconColor]=%23444&amp;style[base][color]=%23000&amp;style[base][fontWeight]=500&amp;style[base][fontFamily]=Roboto%2C+Open+Sans%2C+Segoe+UI%2C+sans-serif&amp;style[base][fontSize]=16px&amp;style[base][fontSmoothing]=antialiased&amp;style[base][:-webkit-autofill][color]=%23444&amp;style[base][::placeholder][color]=%23bbb&amp;style[invalid][iconColor]=%23DC143C&amp;style[invalid][color]=%23DC143C&amp;iconStyle=solid&amp;rtl=false&amp;componentName=card&amp;keyMode=test&amp;apiKey=pk_test_6pRNASCoBOKtIshFeQd4XMUh&amp;referrer=https%3A%2F%2Fdlwgx.csb.app%2F&amp;controllerId=__privateStripeController7471"
+                                                    title="Защищенное окно для ввода данных оплаты картой"
+                                                    style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 19.2px;"></iframe>
+                                            <input class="__PrivateStripeElement-input" aria-hidden="true"
+                                                   aria-label=" " autocomplete="false" maxlength="1"
+                                                   style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: -1px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="col-12 col-xl-6 mx-auto mt-3">
+                                <button class="btn btn-success " type="submit">Pay $25</button>
+                                <button class="btn btn-danger" type="submit">Pay $25</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+<div class="footer" style="height: auto;">
+    <div>
+        <p class="footer-title">Created For Patients
+            By Dentists</p>
+        <p class="footer-text">Find Your Dentist</p>
+    </div>
+    <div class="footer-menu">
+        <ul><p class="form-profile-label">For Patients</p>
+            <li><a href="#">Whitening</a></li>
+            <li><a href="#">Veneers</a></li>
+            <li><a href="#">Braces</a></li>
+            <li><a href="#">Map Search</a></li>
+        </ul>
+        <ul><p class="form-profile-label">For Dentists</p>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Create a Profile</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+        <ul><p class="form-profile-label">Information </p>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About FYD</a></li>
+            <li><a href="#">Contact Information</a></li>
+            <li><a href="#">Policies</a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer-bottom bg-green">
+    <div class="social-icons">
+        <a href="#"><img src="../images/facebook.svg" alt="facebook"></a>
+    </div>
+    <div> ©2021 Find Your Dentist</div>
+</div>
+<script src="../mobile-menu.js"></script>
+</body>
+</html>

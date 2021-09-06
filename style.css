@@ -44,6 +44,8 @@ img {
     flex-wrap: nowrap;
 }
 
+
+
 .row {
     position: relative;
     display: flex;
@@ -2038,7 +2040,8 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     align-self: stretch;
     /*padding: 0 20px 20px;*/
 }
-.index-leftmenu-profile-information{
+
+.index-leftmenu-profile-information {
     position: relative;
     margin-top: -84px;
     padding: 20px 10px 20px 20px;
@@ -2047,27 +2050,33 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     justify-content: flex-start;
     align-items: flex-start;
 }
-.index-leftmenu-profile-photo{
+
+.index-leftmenu-profile-photo {
     width: 128px;
     height: 128px;
     border-radius: 50%;
 }
+
 .leftmenu-index-cover-image {
     width: 100%;
 }
-.bg-gray{
+
+.bg-gray {
     position: absolute;
     top: 20px;
     right: 30px;
     background: #f6f6f6;
 }
-.m-none{
-    margin:0;
+
+.m-none {
+    margin: 0;
 }
-.mt-30{
-    margin-top:30px;
+
+.mt-30 {
+    margin-top: 30px;
 }
-.index-leftmenu-text{
+
+.index-leftmenu-text {
     font-family: PT Sans;
     font-size: 13px;
     font-weight: normal;
@@ -2078,10 +2087,12 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     text-align: left;
     color: #101010;
 }
-.index-leftmenu-text p{
-    margin-top:18px;
+
+.index-leftmenu-text p {
+    margin-top: 18px;
 }
-.index-green-button{
+
+.index-green-button {
     min-width: 82px;
     cursor: pointer;
     background-color: var(--color-green);
@@ -2107,11 +2118,13 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     letter-spacing: 0.75px;
     text-align: center;
 }
-.index-green-button:hover{
+
+.index-green-button:hover {
     color: var(--color-green);
     background: var(--color-white);
 }
-.button-list{
+
+.button-list {
     margin: 34px 0;
     display: flex;
     justify-content: flex-start;
@@ -2119,16 +2132,20 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     flex-wrap: wrap;
 
 }
-.button-list >p span{
+
+.button-list > p span {
     margin: 5px 0;
 }
+
 .index-dentist-gallery-image {
     width: 247px;
     height: 247px;
 }
-.relative{
+
+.relative {
     position: relative;
 }
+
 .index-dentist-gallery-box {
     width: 100%;
     margin-top: 55px;
@@ -2179,11 +2196,13 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     flex-direction: column;
 
 }
-.relative-img{
+
+.relative-img {
     position: relative;
     top: 3px;
     left: 20px;
 }
+
 /*.left-size{*/
 /*    max-width: 0px;*/
 /*}*/
@@ -2327,9 +2346,10 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 @media (max-width: 768px) {
-    .empty{
-       height: 90px;
+    .empty {
+        height: 90px;
     }
+
     .footer-bottom {
         width: 100%;
         height: auto;
@@ -2573,7 +2593,8 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
     .mobile-topmenu {
         margin-left: -10vw;
     }
-    .bg-gray{
+
+    .bg-gray {
         right: 2vw;
         width: 95vw;
     }
@@ -2656,4 +2677,9 @@ input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .page {
     padding-top: 72px;
+}
+
+.biling {
+    max-height: unset;
+    min-height: unset;
 }

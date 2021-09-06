@@ -29,3 +29,19 @@ function closeMenu(mobileClose) {
         openMenu(mobile)
     })
 }
+document.addEventListener('DomContentLoaded',function (){
+    window.onresize = ()=>{
+        widthClientScreen = document.documentElement.clientWidth
+        if (widthClientScreen> 768){
+            document.querySelector(".leftmenu-content").classList.remove("mobile-menu-stop")
+            document.querySelector(".leftmenu-content").classList.remove("mobile-menu-run")
+        }
+    }
+})
+window.onresize = ()=>{
+    widthClientScreen = document.documentElement.clientWidth
+    if (widthClientScreen> 768){
+        document.querySelector(".leftmenu-content").classList.remove("mobile-menu-stop")
+        document.querySelector(".leftmenu-content").classList.remove("mobile-menu-run")
+    }
+}
